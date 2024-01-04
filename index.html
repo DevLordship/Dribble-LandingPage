@@ -3,26 +3,32 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+
         <link rel="stylesheet" href="style.css" />
         <title>Dribble Landing Page</title>
     </head>
     <body>
         <header>
-            <nav>
+            <nav class="nav-container">
                 <div class="logo-container">
-                    <div class="logo"></div>
-                    <div class="logo-text"></div>
+                    <div class="logo">
+                        <img
+                            src="data:image/png;base64,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"
+                        />
+                    </div>
+                    <div class="logo-text">Planoo</div>
                 </div>
-                <div class="navigation-container">
-                    <ul>
-                        <li>Feature</li>
-                        <li>Pricing</li>
-                        <li>About</li>
-                        <li>Blog</li>
+                <div>
+                    <ul class="navigation-container">
+                        <li class="nav-list">Feature</li>
+                        <li class="nav-list">Pricing</li>
+                        <li class="nav-list">About</li>
+                        <li class="nav-list">Blog</li>
                     </ul>
                 </div>
                 <div class="button-container">
-                    <button class="register-button">register</button>
+                    <button class="register-button">Register</button>
                 </div>
             </nav>
         </header>
