@@ -267,10 +267,6 @@
     overflow: hidden;
 }
 
-.small-card-container {
-    /* position: absolute; */
-}
-
 .small-card {
     position: relative;
     height: 200px;
@@ -335,6 +331,7 @@
     background-color: #ffffff;
     width: 90%;
     font-size: 0.85rem;
+    font-weight: 500;
     padding: 0.65rem;
     display: flex;
 }
@@ -361,3 +358,182 @@ input[type="checkbox"]:checked + .custom-checkbox {
     border-color: #000000;
     color: #fff;
 }
+
+.app-section {
+    height: 100vh;
+    background-color: #1ddcff;
+}
+
+/* --------------------App section---------------------------- */
+.mobile-container {
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mobile-nav-bar {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    position: relative;
+
+    width: 85%;
+    margin-top: 10px;
+}
+
+.mobile-other-icons > span {
+    font-size: 0.9rem;
+    display: inline-block;
+    flex: auto;
+}
+
+.mobile-week-bar {
+    width: 90%;
+    display: flex;
+    background-color: #ededed;
+    overflow: hidden;
+    font-size: 0.75rem;
+    gap: 0.4rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    margin-top: 1rem;
+    border-radius: 20px;
+}
+
+.week-days {
+    font-weight: 500;
+    color: #bfbfbf;
+}
+
+.week-days-tuesday {
+    background-color: white;
+    border-radius: 10px;
+    color: #000000;
+    padding-left: 0.35rem;
+    padding-right: 0.35rem;
+    padding-top: 0.05rem;
+    padding-bottom: 0.05rem;
+}
+.mobile-title {
+    font-weight: 600;
+    margin-top: 1.5rem;
+}
+
+.mobile-task-container {
+    background-color: #fe973a;
+    background: linear-gradient(to right, #fe973a, #ffb06c);
+    width: 90%;
+    height: 6.3rem;
+    border-radius: 20px;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.mobile-task-first-conatainer {
+    width: 100%;
+}
+.mobile-task-first {
+    width: 85%;
+    font-size: 0.95rem;
+    position: relative;
+    color: white;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-weight: 600;
+}
+
+.mobile-task-progress {
+    position: relative;
+    height: 6px;
+    width: 180px;
+    background-color: #feb779;
+    z-index: 10;
+    margin-left: 10px;
+    margin-top: 25px;
+    border-radius: 3px;
+}
+
+.mobile-task-progress-indictor {
+    position: relative;
+    height: 6px;
+    width: 60%;
+    background-color: #fff101;
+    z-index: 10;
+    border-radius: 3px;
+
+    margin-top: 25px;
+}
+
+.mobile-task-second {
+    width: 26%;
+    height: 100%;
+    /* display: inline-block;
+    flex-direction: column; */
+    position: relative;
+    margin-top: 9px;
+    /* overflow: hidden; */
+    margin-right: 10px;
+}
+
+.task-day {
+    background-color: #ffb97e;
+    position: relative;
+    font-size: small;
+    font-weight: 600;
+    color: #feab61;
+    font-weight: 500;
+    border-radius: 8px;
+    padding-left: 0.15rem;
+    padding-right: 0.15rem;
+    margin-top: 5px;
+}
+
+.task-day-100 {
+    background-color: #ffffff;
+    position: relative;
+    font-size: small;
+    font-weight: 600;
+    color: #feab61;
+    font-weight: 500;
+    border-radius: 8px;
+    padding-left: 0.15rem;
+    padding-right: 0.15rem;
+    margin-top: 5px;
+}
+.tooltip-container {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip-content {
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    visibility: visible; /* Make the tooltip always visible */
+    opacity: 1; /* Optional: Set opacity for fade effect */
+    z-index: 1; /* Ensure the tooltip is above other content */
+}
+
+.tooltip-content::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -10px; /* Adjust based on arrow width */
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #333 transparent;
+}
+
+/* Optional: Style the trigger element (e.g., a button) */
