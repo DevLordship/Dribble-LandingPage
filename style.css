@@ -321,3 +321,43 @@
 .card-3 > button {
     background-color: #dbdbdb;
 }
+
+.ul-list {
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.list-items {
+    background-color: #ffffff;
+    width: 90%;
+    font-size: 0.85rem;
+    padding: 0.65rem;
+    display: flex;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.custom-checkbox {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* Style custom checkbox when checked */
+input[type="checkbox"]:checked + .custom-checkbox {
+    background-color: #000000;
+    border-color: #000000;
+    color: #fff;
+}
