@@ -413,8 +413,9 @@ input[type="checkbox"]:checked + .custom-checkbox {
 
 .app-section-small-lower-banner {
     width: 70%;
-    height: 100px;
+
     background-color: orange;
+    display: flex;
 }
 
 .mobile-main-container {
