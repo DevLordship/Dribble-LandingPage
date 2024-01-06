@@ -309,3 +309,15 @@
     font-weight: 500;
     margin-top: 2rem;
 }
+
+.card-1 {
+    color: #dbdbdb;
+}
+
+.card-1 > button {
+    background-color: #dbdbdb;
+}
+
+.card-3 > button {
+    background-color: #dbdbdb;
+}
