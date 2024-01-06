@@ -457,8 +457,9 @@ input[type="checkbox"]:checked + .custom-checkbox {
     background-color: #feb779;
     z-index: 10;
     margin-left: 10px;
-    margin-top: 25px;
+    margin-top: -12px;
     border-radius: 3px;
+    /* border: 1px solid black; */
 }
 
 .mobile-task-progress-indictor {
@@ -468,8 +469,8 @@ input[type="checkbox"]:checked + .custom-checkbox {
     background-color: #fff101;
     z-index: 10;
     border-radius: 3px;
-
-    margin-top: 25px;
+    /* border: 1px solid black; */
+    margin-top: -12px;
 }
 
 .mobile-task-second {
@@ -508,32 +509,47 @@ input[type="checkbox"]:checked + .custom-checkbox {
     padding-right: 0.15rem;
     margin-top: 5px;
 }
-.tooltip-container {
+
+.task-progress-tooltip {
+    display: flex;
+    flex-direction: column;
     position: relative;
+    margin-left: 95px;
+
+    width: 40px;
+    height: 35px;
+    padding-bottom: -20px;
+    transform: rotate(-5deg);
+}
+.upper-button {
+    width: 40px;
+    height: 15px;
+    border-radius: 10px;
+    background-color: white;
     display: inline-block;
+    position: relative;
+    font-size: 0.75rem;
+    text-align: center;
+    color: #fe9333;
+    font-weight: 600;
+}
+#down-arrow {
+    position: relative;
+    color: white;
+    width: 0px;
+    height: 0px;
+    margin-top: -10px;
+    margin-left: 8px;
+    /* border: 1px solid black; */
 }
 
-.tooltip-content {
-    position: absolute;
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    border-radius: 4px;
-    font-size: 14px;
-    visibility: visible; /* Make the tooltip always visible */
-    opacity: 1; /* Optional: Set opacity for fade effect */
-    z-index: 1; /* Ensure the tooltip is above other content */
+.goal-button {
+    border: none;
+    background-color: #ffffff;
+    color: black;
+    margin-top: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding-left: 0.35rem;
+    padding-right: 0.35rem;
 }
-
-.tooltip-content::before {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -10px; /* Adjust based on arrow width */
-    border-width: 10px;
-    border-style: solid;
-    border-color: transparent transparent #333 transparent;
-}
-
-/* Optional: Style the trigger element (e.g., a button) */
