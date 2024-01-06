@@ -361,8 +361,8 @@ input[type="checkbox"]:checked + .custom-checkbox {
 
 /* --------------------App section---------------------------- */
 .app-section {
-    height: 100vh;
-    background-color: #1ddcff;
+    height: 150vh;
+    background-color: #ffffff;
 }
 
 .app-section-tagline {
@@ -386,7 +386,7 @@ input[type="checkbox"]:checked + .custom-checkbox {
     flex-direction: column;
 }
 .app-section-big-upper-banner {
-    width: 100;
+    width: 100%;
 
     background-color: #fff101;
     border-radius: 1rem;
@@ -409,13 +409,6 @@ input[type="checkbox"]:checked + .custom-checkbox {
     font-weight: 500;
     font-size: 0.85rem;
     margin-left: 3.5rem;
-}
-
-.app-section-small-lower-banner {
-    width: 70%;
-
-    background-color: orange;
-    display: flex;
 }
 
 .mobile-main-container {
@@ -605,10 +598,83 @@ input[type="checkbox"]:checked + .custom-checkbox {
 .goal-button {
     border: none;
     background-color: #ffffff;
-    color: black;
+    color: rgb(33, 28, 28);
+    font-weight: 600;
     margin-top: 2rem;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
     padding-left: 0.35rem;
     padding-right: 0.35rem;
+}
+
+.app-section-small-lower-banner {
+    margin-top: 1rem;
+    gap: 1rem;
+
+    width: 100%;
+
+    display: flex;
+}
+
+.lower-section-first {
+    background-color: #fe8d27;
+    border-radius: 20px;
+    width: 48%;
+}
+
+.lower-first-banner-title {
+    font-size: 1.75rem;
+    width: 22.125rem;
+    font-weight: 600;
+    margin-left: 3.5rem;
+    margin-top: 1rem;
+    color: white;
+}
+
+.lower-first-banner-sub-title {
+    width: 70%;
+    margin-top: 0.5rem;
+    color: #fee3cb;
+    font-weight: 500;
+    font-size: 0.85rem;
+    margin-left: 3.5rem;
+}
+
+.lower-section-second {
+    background-color: #ecbaf2;
+    border-radius: 20px;
+    width: 50%;
+}
+.lower-second-banner-title {
+    font-size: 1.75rem;
+    width: 26.125rem;
+    font-weight: 600;
+    margin-left: 3.5rem;
+    margin-top: 1rem;
+    color: white;
+}
+
+.lower-second-banner-sub-title {
+    width: 70%;
+    margin-top: 0.5rem;
+    color: #f7e0f9;
+    font-weight: 500;
+    font-size: 0.85rem;
+    margin-left: 3.5rem;
+}
+.mini-title {
+    display: inline-block;
+    text-align: center;
+}
+.lower-second-banner-mini-title {
+    background-color: #ffffff;
+
+    font-size: small;
+    font-weight: 600;
+    color: #838383;
+    font-weight: 500;
+    border-radius: 8px;
+    display: block; /* Arrange the child in a column */
+    width: 100%; /* Take the full width of the parent */
+    box-sizing: border-box;
 }
