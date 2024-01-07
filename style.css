@@ -903,11 +903,6 @@ input[type="checkbox"]:checked + .custom-checkbox {
     background-color: #4a475c;
 }
 
-.play-store-banner {
-    height: 40vh;
-    background-color: turquoise;
-}
-
 .footer-navigation {
     height: 30vh;
     background-color: #898989;
@@ -974,4 +969,149 @@ input[type="checkbox"]:checked + .custom-checkbox {
     width: 95%;
     background-color: #e4e3e3;
     height: 2px;
+}
+
+/* .play-store-banner {
+    height: 51.5vh;
+    background-color: #fe8d27;
+     overflow: hidden; 
+} */
+
+/* .play-circle {
+   
+    border-radius: 50%;
+    background-color: rgba(240, 236, 233, 0.5);
+    width: 350px;
+    height: 350px;
+   
+} 
+*/
+
+/* #play-circle-1 {
+    position: relative;
+    background-color: #fe983c;
+    top: 0;
+    left: -80px;
+} */
+/* #play-circle-2 {
+    position: relative;
+    background-color: #fea452;
+    top: -349px;
+    left: 276px;
+} */
+/* #play-circle-3 {
+    position: relative;
+    background-color: #feaf67;
+    top: -698px;
+    left: 631px;
+} */
+/* #play-circle-4 {
+    position: relative;
+    background-color: #febb7d;
+    top: -1050px;
+    left: 988px;
+} */
+
+/* .play-details {
+    z-index: 2;
+} */
+
+/* .play-div {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+}  */
+
+.play-store-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 47vh;
+    background-color: #fe8d27;
+}
+
+.play-circle {
+    border-radius: 50%;
+    background-color: rgba(240, 236, 233, 0.5);
+    width: 320px;
+    height: 320px;
+}
+
+#play-circle-1 {
+    background-color: #fe983c;
+    position: relative;
+}
+
+#play-circle-2 {
+    background-color: #fea452;
+    position: relative;
+}
+
+#play-circle-3 {
+    background-color: #feaf67;
+    position: relative;
+}
+
+#play-circle-4 {
+    position: relative;
+    background-color: #febb7d;
+}
+
+.play-details {
+    position: absolute; /* Absolute positioning for the overlaying div */
+    top: 3850px;
+    left: 100px;
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.play-title {
+    font-size: 2rem;
+    width: 29.125rem;
+    font-weight: 600;
+    margin-left: 250px;
+}
+
+.play-description {
+    width: 55%;
+    text-align: center;
+    margin-left: 90px;
+    margin-bottom: 1rem;
+}
+
+.play-button-container {
+    color: #000000;
+    font-size: 0.75rem;
+    display: flex;
+    margin-left: 100px;
+    gap: 1rem;
+}
+
+.button-android {
+    background-color: white;
+    display: flex;
+
+    border-radius: 20px;
+
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.button-apple {
+    background-color: white;
+    display: flex;
+    border-radius: 15px;
+
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
