@@ -644,6 +644,7 @@ input[type="checkbox"]:checked + .custom-checkbox {
     background-color: #ecbaf2;
     border-radius: 20px;
     width: 50%;
+    overflow: hidden;
 }
 .lower-second-banner-title {
     font-size: 1.75rem;
@@ -663,18 +664,70 @@ input[type="checkbox"]:checked + .custom-checkbox {
     margin-left: 3.5rem;
 }
 .mini-title {
-    display: inline-block;
-    text-align: center;
-}
-.lower-second-banner-mini-title {
-    background-color: #ffffff;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
 
-    font-size: small;
-    font-weight: 600;
-    color: #838383;
-    font-weight: 500;
-    border-radius: 8px;
-    display: block; /* Arrange the child in a column */
-    width: 100%; /* Take the full width of the parent */
-    box-sizing: border-box;
+    width: fit-content;
+    margin-left: 20px;
+    top: 32px;
+    z-index: 1;
+}
+
+.lower-second-banner-mini-title {
+    background-color: white;
+    position: relative;
+    width: fit-content;
+    border-radius: 15px;
+    font-size: 0.75rem;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    margin-top: 10px;
+}
+
+.overlay-circle-container {
+    width: fit-content;
+    position: relative;
+    left: 41px;
+}
+
+.overlay-big-circle {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background-color: #f1f1f1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-small-circle-orange-circle {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ef8526;
+    top: 40%;
+    left: 13%;
+}
+.overlay-small-circle-yellow-circle {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #f0dac8;
+    top: 25%;
+    left: 50%;
+}
+
+.element-container {
+    width: fit-content;
+    position: relative;
+    top: 60px;
+    left: 109px;
+    margin-top: -70px;
 }
