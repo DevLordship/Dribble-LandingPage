@@ -21,7 +21,8 @@
     height: 3.5rem;
 }
 
-.logo-container {
+.logo-container,
+.footer-logo {
     margin-left: 2rem;
 }
 
@@ -822,7 +823,8 @@ input[type="checkbox"]:checked + .custom-checkbox {
     padding-top: 2rem;
 }
 .reviews-tagline {
-    margin-top: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     font-size: 2rem;
     width: 29.125rem;
     font-weight: 600;
@@ -894,4 +896,82 @@ input[type="checkbox"]:checked + .custom-checkbox {
 .reviewer-details {
     color: #aeadb6;
     margin-bottom: 1rem;
+}
+
+.faq {
+    height: 50vh;
+    background-color: #4a475c;
+}
+
+.play-store-banner {
+    height: 40vh;
+    background-color: turquoise;
+}
+
+.footer-navigation {
+    height: 30vh;
+    background-color: #898989;
+}
+.footer-bar {
+    height: 8vh;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright {
+    color: #aeadb6;
+    margin-right: 2rem;
+}
+
+.footer-navigation {
+    display: flex;
+    justify-content: space-between;
+    color: #aeadb6;
+    background-color: #ffffff;
+    font-size: 0.75rem;
+}
+
+.footer-logo {
+    margin-top: 1.5rem;
+}
+
+.footer-links {
+    display: flex;
+    margin-top: 1.5rem;
+    justify-content: center;
+
+    gap: 3.5rem;
+}
+.footer-links-main {
+    align-items: flex-start;
+}
+.ul-list {
+    list-style-type: none;
+}
+
+.footer-list-links {
+    list-style-type: none;
+    margin-bottom: 5px;
+}
+.footer-address {
+    width: 10rem;
+    margin-top: 1.5rem;
+    margin-right: 2rem;
+}
+
+.footer-icon-holder {
+    margin-left: 2rem;
+}
+
+.headins {
+    color: #000000;
+    font-weight: 600;
+}
+.seperator {
+    margin-left: 2rem;
+    width: 95%;
+    background-color: #e4e3e3;
+    height: 2px;
 }
