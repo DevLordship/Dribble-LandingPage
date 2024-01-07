@@ -612,7 +612,7 @@ input[type="checkbox"]:checked + .custom-checkbox {
     gap: 1rem;
 
     width: 100%;
-
+    overflow: hidden;
     display: flex;
 }
 
@@ -730,4 +730,90 @@ input[type="checkbox"]:checked + .custom-checkbox {
     top: 60px;
     left: 109px;
     margin-top: -70px;
+}
+
+.hollow-circle-orange {
+    width: 100px;
+    height: 100px;
+    border: 7px solid #feb067;
+    border-radius: 50%;
+}
+.hollow-circle-yellow {
+    width: 100px;
+    height: 100px;
+    border: 5px solid yellow;
+    border-radius: 50%;
+}
+
+.progress-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform: rotate(221deg);
+}
+
+.progress-circle {
+    width: 100%;
+    height: 100%;
+    border: 8px solid #feb067; /* Outer border color */
+    border-radius: 50%;
+    position: absolute;
+}
+
+.progress-fill {
+    width: 100%;
+    height: 100%;
+    border: 8px solid #fff401; /* Progress color */
+    border-radius: 100%;
+    clip: rect(0, 164px, 199px, 0);
+    position: absolute;
+}
+
+.emogies {
+    width: 100px;
+}
+.emogies > img {
+    object-fit: cover;
+    width: 60px;
+}
+.progress-emogi-container {
+    width: fit-content;
+
+    display: flex;
+    position: relative;
+    top: 50px;
+    left: 11px;
+}
+
+#party-face {
+    position: relative;
+    top: 10px;
+    left: 20px;
+}
+#nerd-face {
+    position: relative;
+    top: 23px;
+    left: -22px;
+}
+#black-glasses-face {
+    position: relative;
+    top: 4px;
+    left: -172px;
+}
+
+.percent-emogi {
+    width: 40px;
+    height: 15px;
+    border-radius: 10px;
+    background-color: white;
+    display: inline-block;
+    position: relative;
+    font-size: 0.75rem;
+    text-align: center;
+    color: #fe9333;
+    font-weight: 600;
+    position: relative;
+    top: 118px;
+    left: -122px;
+    z-index: 1;
 }
